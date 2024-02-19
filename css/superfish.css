@@ -1,0 +1,242 @@
+
+nav>.sf-menu {
+	z-index: 990;
+	text-align: left;
+	position: relative;
+}
+
+nav { 
+	margin: 39px 9px 0 0;
+	position:relative;
+	padding: 0;
+	float: right;
+}
+
+.sf-menu ul { 
+	position:absolute; 
+	top:-999px; 
+	display:none; 
+	font: bold 14px/30px 'Ubuntu', sans-serif;
+}
+
+.sf-menu li { float:left;position:relative; }
+.sf-menu>li {
+	display: block;
+	position: relative;
+	float: left;
+	text-transform: uppercase;
+	padding: 0 28px 4px;
+	margin-right: 5px;
+}
+
+.sf-menu>li>ul>li {
+  float: none;
+  position: static;
+}
+
+.sf-menu>li>a{
+	display: block;
+	text-align: left;
+	position: relative;
+	color: #fff;
+	font: 700 14px/30px 'Ubuntu', sans-serif;
+	text-align: center;
+	text-transform: none;
+	text-decoration: none;
+}
+
+.sf-menu>li+li>a {
+
+}
+
+.sf-menu>li>a:hover,
+.sf-menu>li.current>a,
+.sf-menu>li.sfHover>a {
+	position: relative;
+	text-decoration: none;
+	color: #fff;
+}
+
+.sf-menu>li:hover, .sf-menu>li.current {
+	border-bottom: 5px solid #e75a3e;
+	cursor: pointer;
+}
+
+.sf-menu>li>a.sf-with-ul:after {
+	position: absolute;
+	content: '';
+	left: 46%;
+	top: 28px;
+	width: 7px;
+	background: url(../images/arrow_menu.png) 0 0 no-repeat;
+	height: 6px;
+	pointer-events: none;
+	z-index: 999;
+	display: block;
+}
+
+.sf-menu>li.sfHover>a.sf-with-ul:after, 
+.sf-menu>li.current>a.sf-with-ul:after {
+
+}
+
+.sf-menu>li>ul>li>a.sf-with-ul:after {
+	content: '';
+	position: absolute;
+	display: none;
+	width: 7px;
+	height: 6px;
+	right: 20px;
+	bottom: 11px;
+	pointer-events: none;
+	z-index: 999;
+}
+
+.sf-menu>li>ul>li.sfHover>a.sf-with-ul:after {
+	background-position: 0 bottom;
+}
+
+/*================================>> 2 Level <<========================================*/
+
+.sf-menu li ul,.sf-menu li.sfHover>ul{
+	position: absolute;
+	z-index: 999;
+	top: 26px;
+	left: 0;
+	padding: 12px 0;
+	background-color: #293f4c;
+}
+
+.sf-menu li ul li{
+	position: relative;
+	text-align: left;
+	float: none !important;
+	text-transform: uppercase;
+	padding: 0px 16px 0px 16px;
+	cursor: default;
+}
+
+.sf-menu li ul li a{
+	position: relative;
+	z-index: 999;
+	display: inline-block;
+	color: #ffffff;
+	font: normal 12px/34px Arial;
+	text-decoration: none;
+}
+
+.sf-menu>li>ul>li>a.sf-with-ul:after {
+	position: absolute;
+	content: '';
+	right: -15px;
+	width: 7px;
+	background: url(../images/arrow_menu.png) 0 0px no-repeat;
+	height: 6px;
+	top: 15px;
+	pointer-events: none;
+	z-index: 999;
+	display: block;
+}
+
+.sf-menu>li>ul>li.sfHover>a.sf-with-ul:after {
+	top: 14px;
+}
+
+.sf-menu li li a:hover, 
+.sf-menu li.sfHover li.sfHover>a {  
+	color: #13c4c5;
+	text-decoration: none;
+}
+
+/*================================>> 3 Level <<========================================*/
+
+.sf-menu li.sfHover li.sfHover ul{
+	position: absolute;
+	left: 120px;
+	top: 4px;
+	background: #fff;
+	padding: 2px 12px 2px 0;
+}
+
+.sf-menu li.sfHover li.sfHover ul li {
+	padding: 0 18px 0 18px;
+}
+
+.sf-menu li.sfHover li.sfHover ul li a {
+	color: #000;
+	padding-right: 0;
+}
+
+.sf-menu li.sfHover li.sfHover ul li a:hover {
+	color: #e75a3e;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+/*==================================RESPONSIVE LAYOUTS===============================================*/
+
+@media only screen and (max-width: 1199px) {
+	
+	.sf-menu > li {padding: 0 16px 4px; }
+}
+
+@media only screen and (max-width: 995px) {
+	
+	nav {
+		margin-right: 0px;
+	}
+
+	.sf-menu>li+li {
+		margin-left: 0;
+	}
+
+	.sf-menu > li {
+		margin-right: 0px;
+		padding: 0 8px 4px;
+	}
+
+	.sf-menu > li > a {
+		font-size: 13px;
+	}
+
+	.sf-menu li ul li a {font-size: 11px;}
+
+
+}
+
+@media only screen and (max-width: 767px) {
+	.menu_block {
+		float: none !important;
+		padding: 20px 10px 25px !important;
+		clear: both;
+		min-height: 0px;
+  		border: none;
+  		width: auto;
+	}
+
+  	header nav{
+  		border: none !important;
+		float:none !important;
+		font:12px/15px Arial, Helvetica, sans-serif;
+		text-transform:uppercase;
+		color:#927c67;
+		margin: 0 auto;	
+	}	
+
+  	header nav ul {
+  		border: none;
+    }
+
+	.sf-menu{display:none !important; float: none;}
+
+	#mm0{
+		font:12px/15px Arial, Helvetica, sans-serif;
+		color:#293f4c;
+		width:100%;
+		margin: 20px auto 20px;
+		float: none;
+        outline: none;
+		border:1px solid #c4c4c4;
+	}
+
+}

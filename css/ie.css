@@ -1,0 +1,55 @@
+
+#toTop, .camera_wrap .camera_pag .camera_pag_ul li > span { behavior:url(js/PIE.htc); }
+
+
+#form .invalid .error-message, #form .empty .empty-message { display: block; }
+
+#form .error-message, #form .empty-message { display: none; }
+
+.slider_wrapper > img {
+    z-index: 0;
+    position: absolute;
+    width: 100%!important;
+    left: 0;
+}
+
+.banner > img {
+    z-index: 0;
+    position: absolute;
+    width: 100%!important;
+    height: 142px;
+    top: 0;
+}
+
+.banner {background: none;}
+.banner h5 {z-index: 1;position: relative; overflow: hidden;display: inline-block;}
+
+#subscribe-form img {
+	background: url(../images/bg_transp.png) 0 0 repeat;
+	padding: 12px 10px 13px 10px;
+	top: 0;
+	left: 0;
+}
+
+#subscribe-form input {
+	background: url(../images/bg_transp.png) 0 0 repeat;
+	padding-top: 7px!important; 
+	padding-right: 7px!important; 
+	margin-left: 35px!important;
+	padding-left: 0;
+	overflow: hidden;
+	width: 70%;
+	float: left;
+}
+#subscribe-form a {
+	width: 20%;
+	float: right;
+	margin-right: 2px;
+}
+
+#form input {padding-top:10px!important; height: 40px;line-height: 18px;}
+#form ._placeholder {padding-top: 10px;}
+
+address b {line-height: 26px!important;}
+
+h4 {max-width: 400px;}
